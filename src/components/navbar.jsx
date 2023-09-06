@@ -3,8 +3,8 @@ import { logo } from '../assets'
 
 const Navbar = () => {
   return (
-    <div>
-        <img src={logo}/>
+    <div className='p-5 '>
+        <img src={logo} />
     </div>
   )
 }

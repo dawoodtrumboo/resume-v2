@@ -1,1 +1,8 @@
 export {default as Navbar} from './Navbar'
+export {default as Intro} from './Intro'
+export {default as CustomButton} from './CustomButton'
+export {default as ProjectSection} from './ProjectSection'
+export {default as ProjectCard} from './ProjectCard'
+export {default as OtherSection} from './OtherSection'
+export {default as OtherCard} from './OtherCard'
+export {default as FooterSection} from './FooterSection'
