@@ -26,7 +26,7 @@ const FooterSection = ({style}) => {
         </div>
         <div className=' w-full flex flex-col '>
         <p className='font-normal text-[#FFFFFF42] '> Thanking for stopping by ッ</p>
-        <p className='font-normal text-[#FFFFFF42]'>© 2023 Eihab Khan. All Rights Reserved.</p>
+        <p className='font-normal text-[#FFFFFF42]'>© 2023 Dawood Trumboo. All Rights Reserved.</p>
         </div>
     </div>
   )
