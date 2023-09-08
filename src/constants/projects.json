@@ -1,6 +1,7 @@
 [
+
     {
-      "image": "https://example.com/project1.jpg",
+      "image": "../assets/solidity.svg",
       "description": "In my final year project, I played a key role in developing a Blockchain Crowdfunding Platform. This innovative platform aimed to transform traditional crowdfunding by leveraging blockchain technology for enhanced security and transparency. My primary contributions involved crafting the user interface using React and Tailwind CSS, cutting-edge technologies that elevated the user experience.",
       "projectName": "Crowdfunding Platform on Blockchain"
     },
