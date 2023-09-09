@@ -8,6 +8,9 @@ import avatar from './avatar.png'
 import techstack from './techstack.png'
 import Notebook from './Notebook.png'
 import Bookshelf from './Bookshelf.png'
+import phone from './phone.png'
+import store from './store.png'
+import resumeweb from './resumeweb.png'
 
 
 export {
@@ -20,5 +23,8 @@ export {
     avatar,
     techstack,
     Notebook,
-    Bookshelf
+    Bookshelf,
+    phone,
+    store,
+    resumeweb
 }
