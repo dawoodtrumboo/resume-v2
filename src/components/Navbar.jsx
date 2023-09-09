@@ -10,7 +10,7 @@ const Navbar = ({lightTheme,handleTheme}) => {
   const isWideScreen = useMediaQuery({minWidth: 1000});
   const isTabScreen = useMediaQuery({minWidth: 768});
   return (
-    <div className='p-5 md:w-full md:pt-[50px] md:p-0 z-10'>
+    <div className='p-5 md:w-full md:pt-[50px] md:p-0 z-10 '>
       {
        isWideScreen ? ( <div className={`flex w-1024 h-[60px] p-[16px] justify-between items-center 
         rounded-lg backdrop-blur-sm ${lightTheme?'text-[#181818] border border-solid border-[#e0e0e0] border-opacity-25 bg-white bg-opacity-25':'text-white bg-gray-800 bg-opacity-30'} `}>

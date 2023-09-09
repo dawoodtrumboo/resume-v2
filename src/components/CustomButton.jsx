@@ -17,7 +17,7 @@ const CustomButton = (props) => {
       };
   return (
     <button style={btnStyle}>
-       {props.name}
+       <a href={`${props.link?props.link:'#'}`} target='_blank'>{props.name}</a>
     </button>
   )
 }
