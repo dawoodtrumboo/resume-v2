@@ -24,9 +24,9 @@ const Navbar = ({lightTheme,handleTheme}) => {
         </div>
         <div className='flex w-3/4 justify-end gap-[20px] items-center'>
         
-        <FontAwesomeIcon icon={faLinkedin} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg'/>
-        <FontAwesomeIcon icon={faXTwitter} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg' />
-        <FontAwesomeIcon icon={faGithub} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg' />
+        <a href='https://www.linkedin.com/in/dawoodtrumboo/' target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg'/></a>
+        <a href='https://twitter.com/dmax_eth' target='_blank'><FontAwesomeIcon icon={faXTwitter} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg' /></a>
+       <a href='https://github.com/dawoodtrumboo' target='_blank'><FontAwesomeIcon icon={faGithub} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg' /></a>
         <span className='text-[25px] mb-1 font-thin'>|</span>
        <FontAwesomeIcon icon={faSun} style={{ color: lightTheme ? "#181818" : "#ffffff" }} size='lg' onClick={handleTheme}/>
         </div>
