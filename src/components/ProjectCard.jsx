@@ -1,5 +1,5 @@
 import React from 'react'
-import { logobox } from '../assets'
+import { logobox,arrow } from '../assets'
 import { useMediaQuery } from 'react-responsive'
 
 
@@ -18,7 +18,10 @@ const ProjectCard = (props) => {
     <h1 className={`text-lg font-extrabold ${props.lightTheme ? 'text-black' : 'text-white'}`}>{props.title}</h1>
     <p className=' pb-10 text-sm font-normal tracking-tighter'>{props.description}</p>
     </div>
-    <h1 className={`text-lg font-normal md:pt-[0px] ${props.lightTheme ? 'text-black' : 'text-white'}`}>Explore</h1>
+    <div className='flex w-full gap-2'>
+    <a href={props.link}><h1 className={`text-lg font-normal md:pt-[0px] ${props.lightTheme ? 'text-black' : 'text-white'}`}>Explore</h1></a>
+    <img src={arrow} className='w-[20px]'/>
+    </div>
     </div>
     {isWideDevice ? (<img src={props.background} className='w-[40%]'/>) : ''}
 </div>

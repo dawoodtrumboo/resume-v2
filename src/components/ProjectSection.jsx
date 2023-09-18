@@ -13,7 +13,7 @@ const ProjectSection = ({lightTheme}) => {
           background = {project.bg}
           title={project.title}
           description= {project.description}
-          // imageSrc={require(`../assets/${project.img}`)}
+          link = {project.link}
           image={project.image}
           lightTheme = {lightTheme}
           />

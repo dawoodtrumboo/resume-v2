@@ -11,6 +11,7 @@ import Bookshelf from './Bookshelf.png'
 import phone from './phone.png'
 import store from './store.png'
 import resumeweb from './resumeweb.png'
+import arrow from './arrow.svg'
 
 
 export {
@@ -26,5 +27,6 @@ export {
     Bookshelf,
     phone,
     store,
-    resumeweb
+    resumeweb,
+    arrow
 }
