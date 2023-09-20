@@ -13,7 +13,7 @@ const Intro = ({lightTheme}) => {
         <div className='w-full flex flex-col md:flex-row md:gap-3'>
         <CustomButton name="See my resume" link="https://drive.google.com/file/d/1-fmKB2xw_9l8F8NhJgUDEJzgLKpwkIOe/view?usp=sharing"/>
         <CustomButton name="Get in touch"/>
-        </div>
+        </div> 
     </div>
   )
 }

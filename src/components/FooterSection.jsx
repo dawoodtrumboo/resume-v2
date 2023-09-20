@@ -4,11 +4,11 @@ import { logo } from '../assets'
 const FooterSection = ({style,lightTheme}) => {
   return (
     <div className={`w-full pt-20 relative flex flex-col items-center mb-10 md:flex-row-reverse md:justify-end `}>
-        <div style={style} className='h-full absolute transform rotate-180'> </div>
-        <div className='w-full md:flex md:flex-row-reverse md:w-1/2 md:pr-6'>
+        <div style={style} className='z-0 h-full absolute transform rotate-180'> </div>
+        <div className='z-10 w-full md:flex md:flex-row-reverse md:w-1/2 md:pr-6'>
         <div className={` mb-10 w-full md:w-1/3  flex flex-col md:items-end md:pr-6 ${lightTheme?'text-black':'text-white'} `}>
             <p className='font-semibold w-1/3 mb-5'>Elsewhere</p>
-            <a className='font-thin w-1/3'>Email</a>
+            <a className='font-thin w-1/3' href='mailto:idawoodtrumboo@gmail.com'>Email</a>
             <a href='https://www.linkedin.com/in/dawoodtrumboo/' target='_blank' className='font-thin w-1/3'>LinkedIn</a>
             <a href='https://github.com/dawoodtrumboo' target='_blank' className='font-thin w-1/3'>GitHub</a>
             <a href='https://github.com/dawoodtrumboo' target='_blank' className='font-thin w-1/3'>Twitter</a>
