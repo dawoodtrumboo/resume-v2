@@ -28,7 +28,7 @@ const FooterSection = ({style,lightTheme}) => {
         <div className='w-full flex  '>
         <img src={logo}/>
         </div>
-        <div className={` w-full flex flex-col ${lightTheme?'text-[#FFFFFF42]':'text-white'}`}>
+        <div className={` w-full flex flex-col ${lightTheme?'!text-gray':'text-white'}`}>
         <p className='font-normal'> Thanking for stopping by ッ</p>
         <p className='font-normal '>© 2023 Dawood Trumboo. All Rights Reserved.</p>
         </div>

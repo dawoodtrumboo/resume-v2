@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { gradient } from './assets'
 
-import { About , LandingPage} from './pages';
+import { About , LandingPage, Projects} from './pages';
 import { Navbar } from './components';
 import { Router, Route, Routes } from 'react-router-dom';
 
@@ -52,6 +52,13 @@ const App = () => {
           lightTheme = {lightMode}
           />
         }/>
+        <Route path='projects' element={
+          <Projects
+          gradient = {style}
+          handleTheme ={ toggleLightMode}
+          lightTheme = {lightMode}
+           />
+        } />
 
       </Routes>
 

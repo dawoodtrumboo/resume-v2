@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
     <p className=' pb-10 text-sm font-normal tracking-tighter'>{props.description}</p>
     </div>
     <div className='flex w-full gap-2'>
-    <a href={props.link}><h1 className={`text-lg font-normal md:pt-[0px] ${props.lightTheme ? 'text-black' : 'text-white'}`}>Explore</h1></a>
+    <a href={props.link} target='_blank' ><h1 className={`text-lg font-normal md:pt-[0px] ${props.lightTheme ? 'text-black' : 'text-white'}`}>Explore</h1></a>
     <img src={arrow} className='w-[20px]'/>
     </div>
     </div>

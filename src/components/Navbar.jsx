@@ -17,8 +17,12 @@ const Navbar = ({lightTheme,handleTheme}) => {
         rounded-lg backdrop-blur-sm ${lightTheme?'text-[#181818] border border-solid border-[#e0e0e0] border-opacity-25 bg-white bg-opacity-25':'text-white bg-gray-800 bg-opacity-30'} `}>
        <Link to='/'> <img src={logo} /> </Link>
         <div className='flex gap-8 w-2/4 ml-[100px] '>
+          <Link to='/about'>
           <span>About</span>
+          </Link>
+          <Link to='/projects'>
           <span>Work</span>
+          </Link>
           <span>Notebook</span>
           <span>Contact</span>
           <span>More</span>

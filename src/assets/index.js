@@ -14,6 +14,7 @@ import resumeweb from './resumeweb.png'
 import arrow from './arrow.svg'
 import signDark from './signDark.svg'
 import signLight from './signLight.svg'
+import star from './star.svg'
 
 
 export {
@@ -32,5 +33,6 @@ export {
     resumeweb,
     arrow,
     signDark,
-    signLight
+    signLight,
+    star
 }

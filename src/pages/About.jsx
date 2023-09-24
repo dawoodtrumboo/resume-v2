@@ -10,8 +10,8 @@ const About = (props) => {
     <div className='w-full mt-10'>
         
         <div className='w-full flex flex-col items-start space-y-2'>
-          <h1 className='text-[48px] w-2/3 text-white font-bold leading-none'>A little bit about me</h1>
-          <p className=' '>Who I am and what I do.</p>
+          <h1 className={`text-[48px] w-2/3 font-bold leading-none ${props.lightTheme ? 'text-black': 'text-white'}`}>A little bit about me</h1>
+          <p>Who I am and what I do.</p>
         </div>
 
         <hr className='w-[200%] border-gray-600 my-5 -m-20'  />
@@ -45,12 +45,12 @@ const About = (props) => {
             </ul>
         </div>
 
-        <div className='md:flex md: justify-between md:w-full border-2 border-red-500 '>
-            <div>
+        <div className='md:flex md:justify-between  md:w-full'>
+            <div >
             <h1>Let's build something great,</h1>
             <img  src={props.lightTheme? signDark : signLight } className='w-[280px] -ml-14 my-3' />
             </div>
-            <div className='mt-10 w-full flex flex-col  border-2 border-red-500  items-center  mb-10 md:flex-row md:justify-between md:mt-[100px]'>
+            <div className='mt-10 md:mt-0 w-full flex flex-col items-center mb-10 md:flex-row md:justify-end'>
       <CustomButton name="Get in touch"
       />
      </div>
