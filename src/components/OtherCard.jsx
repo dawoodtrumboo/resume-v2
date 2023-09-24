@@ -8,6 +8,7 @@ const OtherCard = ({image,title,description,style,lightTheme}) => {
     console.log("hi");
     setLightMode(!lightMode);
   };
+  
   return (
     <div className={`flex w-[99%] md:h-[380px]  pt-[32px] flex-col items-center space-y-1 rounded-2xl border overflow-hidden ${lightTheme ? 'bg-[#F6F6F6]  border-gray-300' : 'bg-[#181818]  border-gray-700'}`}>
     <h1 className={`text-2xl font-extrabold ${lightTheme ? 'text-black' : 'text-white'}`} onClick={toggleLightMode}>{title}</h1>

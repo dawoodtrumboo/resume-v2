@@ -12,6 +12,8 @@ import phone from './phone.png'
 import store from './store.png'
 import resumeweb from './resumeweb.png'
 import arrow from './arrow.svg'
+import signDark from './signDark.svg'
+import signLight from './signLight.svg'
 
 
 export {
@@ -28,5 +30,7 @@ export {
     phone,
     store,
     resumeweb,
-    arrow
+    arrow,
+    signDark,
+    signLight
 }

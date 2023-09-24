@@ -1,5 +1,6 @@
 import React from 'react'
 import OtherCard from './OtherCard'
+import { Link } from 'react-router-dom'
 import { avatar,techstack,Bookshelf,Notebook } from '../assets'
 
 const OtherSection = ({lightTheme}) => {
@@ -11,13 +12,16 @@ const OtherSection = ({lightTheme}) => {
     <div className='w-full space-y-5'>
         <h1 className='text-2xl font-bold text-start text-white'>Get to know me</h1>
         <div className='space-y-5 md:grid md:grid-cols-2 md:gap-5 md:space-y-0'>
+           <Link to='/about'>
             <OtherCard 
               lightTheme = {lightTheme}
               title="About Me"
               image = {avatar}
               description ="Who I am and what I do"
               style={style}
+              
             />
+            </Link>
             <OtherCard 
             lightTheme = {lightTheme}
             title= "Tech Stacks"
