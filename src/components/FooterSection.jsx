@@ -11,7 +11,7 @@ const FooterSection = ({style,lightTheme}) => {
             <a className='font-thin w-1/3' href='mailto:idawoodtrumboo@gmail.com'>Email</a>
             <a href='https://www.linkedin.com/in/dawoodtrumboo/' target='_blank' className='font-thin w-1/3'>LinkedIn</a>
             <a href='https://github.com/dawoodtrumboo' target='_blank' className='font-thin w-1/3'>GitHub</a>
-            <a href='https://github.com/dawoodtrumboo' target='_blank' className='font-thin w-1/3'>Twitter</a>
+            <a href='https://twitter.com/dmax_eth' target='_blank' className='font-thin w-1/3'>Twitter</a>
             <a href='https://discord.gg/FS2Er2x' target='_blank' className='font-thin w-1/3'>Discord</a>
         </div>
 
@@ -28,7 +28,7 @@ const FooterSection = ({style,lightTheme}) => {
         <div className='w-full flex  '>
         <img src={logo}/>
         </div>
-        <div className={` w-full flex flex-col ${lightTheme?'text-[#FFFFFF42]':'text-white'}`}>
+        <div className={` w-full flex flex-col ${lightTheme?'!text-gray':'text-white'}`}>
         <p className='font-normal'> Thanking for stopping by ッ</p>
         <p className='font-normal '>© 2023 Dawood Trumboo. All Rights Reserved.</p>
         </div>

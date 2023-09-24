@@ -1,11 +1,14 @@
 import React,{useState} from 'react'
 import { gradient } from './assets'
-import Navbar from './components/Navbar';
-import { CustomButton, FooterSection, Intro, OtherSection, ProjectSection } from './components';
+
+import { About , LandingPage, Projects} from './pages';
+import { Navbar } from './components';
+import { Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   
   const [lightMode, setLightMode] = useState(false)
+
 
   const toggleLightMode = () =>{
     setLightMode(!lightMode);
@@ -20,43 +23,48 @@ const App = () => {
     backgroundSize: 'cover',
    
   };
+
+ 
   
   return (
-    <div className={`w-full flex flex-col items-center px-5 overflow-hidden md:px-[50px] ${lightMode? 'bg-white':'bg-black'}`}>
-      <Navbar
-      handleTheme ={ toggleLightMode}
+    
+    <div className={`w-full  flex flex-col items-center px-5 overflow-hidden md:px-[50px] ${lightMode? 'bg-white':'bg-black'}`}>
+      <div style={style} className='absolute'> 
+     </div>
+
+     <Navbar
+      handleTheme ={toggleLightMode}
       lightTheme = {lightMode}
       />
-     <div style={style} className='absolute'> 
-     </div>
-     <Intro 
-     lightTheme = {lightMode}
-     />
-     <ProjectSection
-     lightTheme = {lightMode}
-     />
-     <OtherSection
-     lightTheme = {lightMode}
-     />  
-     <div className='mt-10 w-full flex flex-col items-center mb-10 md:flex-row md:justify-between md:mt-[100px]'>
-      <div className='flex flex-col justify-center items-center md:items-start '>
-      <h1 className={`text-2xl font-extrabold  mb-2 ${lightMode ? 'text-black' : 'text-white'} `}> Let's Work Together</h1>
-      <p className='text-sm font-normal tracking-tighter text-center mb-5 md:w-2/3 md:text-start'>Want to discuss an opportunity to create something great? I’m ready when you are.</p>
-      </div>
-      <CustomButton name="Get in touch"
-      />
-     </div>
+     <Routes>
+        <Route path = '/' element ={
+        <LandingPage
+          gradient = {style}
+          handleTheme ={ toggleLightMode}
+          lightTheme = {lightMode}
+          />
+        } />
 
-     <hr className='w-[200%] border-gray-600'  />
+        <Route path='/about' element={
+          <About
+          gradient = {style}
+          handleTheme ={ toggleLightMode}
+          lightTheme = {lightMode}
+          />
+        }/>
+        <Route path='projects' element={
+          <Projects
+          gradient = {style}
+          handleTheme ={ toggleLightMode}
+          lightTheme = {lightMode}
+           />
+        } />
 
-     <FooterSection style={style}
-     lightTheme = {lightMode}
-     />
+      </Routes>
+
      
-
-     
       </div>
-    
+  
   )
 }
 

@@ -4,6 +4,7 @@ import { logo } from '../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faXTwitter, faGithub, } from '@fortawesome/free-brands-svg-icons'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({lightTheme,handleTheme}) => {
 
@@ -14,10 +15,14 @@ const Navbar = ({lightTheme,handleTheme}) => {
       {
        isWideScreen ? ( <div className={`flex w-1024 h-[60px] p-[16px] justify-between items-center 
         rounded-lg backdrop-blur-sm ${lightTheme?'text-[#181818] border border-solid border-[#e0e0e0] border-opacity-25 bg-white bg-opacity-25':'text-white bg-gray-800 bg-opacity-30'} `}>
-        <img src={logo} />
+       <Link to='/'> <img src={logo} /> </Link>
         <div className='flex gap-8 w-2/4 ml-[100px] '>
+          <Link to='/about'>
           <span>About</span>
+          </Link>
+          <Link to='/projects'>
           <span>Work</span>
+          </Link>
           <span>Notebook</span>
           <span>Contact</span>
           <span>More</span>

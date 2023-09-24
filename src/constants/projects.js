@@ -1,7 +1,7 @@
 
 import { solidity,ods,cv,phone,store,resumeweb} from "../assets";
 
-export const projectData = [
+export let projectData = [
     {
       "id": 1,
       "image": solidity,
