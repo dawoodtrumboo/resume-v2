@@ -20,7 +20,7 @@ const About = (props) => {
           <div>
             <h2 className='uppercase font-bold'>Who I Am</h2>
             <p>I’m <em className={`font-bold ${props.lightTheme ? '': 'text-white'}`}>Dawood</em> a multi-disciplinary 
-            front-end engineer based in Kashmir, India.</p>
+            front-end engineer based from Kashmir.</p>
           </div>
 
           <div>
