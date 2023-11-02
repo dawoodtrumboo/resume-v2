@@ -8,7 +8,7 @@ export let projectData = [
       "bg" : phone,
       "title": "Crowdfunding Platform on Blockchain",
       "description": "In my final year project, I played a key role in developing a Blockchain Crowdfunding Platform. My primary contributions involved crafting the user interface using React and Tailwind CSS, cutting-edge technologies that elevated the user experience.",
-      "link" : "https://crowd-funding-platform-on-blockchain.vercel.app/"
+      "link" : "https://crowdfundingplatformonblockchain.vercel.app/"
     },
     {
       "id": 2,
