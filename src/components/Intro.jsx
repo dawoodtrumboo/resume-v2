@@ -11,7 +11,7 @@ const Intro = ({lightTheme}) => {
          the boundaries of web development to create human centric services and experiences.</p>
 
         <div className='w-full flex flex-col md:flex-row md:gap-3'>
-        <CustomButton name="See my resume" link="https://drive.google.com/file/d/181ZRVQEex-8JhhzFUarK9yX6-amjjG_d/view?usp=sharing"/>
+        <CustomButton name="See my resume" link="https://drive.google.com/file/d/1b5BkCh8RRNNZEqTqh6CVhXBrP2SIo0dK/view?usp=sharing"/>
         <CustomButton name="Get in touch"/>
         </div> 
     </div>
